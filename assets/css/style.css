@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root {
+    --PaleViolet: hsl(276, 100%, 81%);
+    --ModerateViolet: hsl(276, 55%, 52%);
+    --DesaturatedDarkViolet: hsl(271, 15%, 43%);
+    --GrayishBlue: hsl(206, 6%, 79%);
+    --VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+    --DarkGrayishViolet: hsl(270, 7%, 64%);
+
+    --LightMagenta: hsl(293, 100%, 63%);
+    --LightViolet: hsl(264, 100%, 61%);
+
+    --White: hsl(0, 0%, 100%);
+    --chatBgcolor: hsla(276, 100%, 81%, 0.2);
+    --LightGrayishViolet: hsl(270, 20%, 96%);
+    --VeryDarkDesaturated: hsl(271, 36%, 24%);
+    --VeryLightMagenta: hsl(289, 100%, 72%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+}
+/* left background design */
+.left-background {
+    position: absolute;
+    z-index: -1;
+    border-radius: 0 0 51rem 51rem;
+    background-image: linear-gradient(30deg, hsl(264deg 100% 61%) 0%, hsl(280deg 100% 61%) 70%, rgb(201, 66, 255) 100%);
+}
+/* end left background design */
+
+.card {
+    display: grid;
+    place-items: center;
+}
+
+/* smart phone design */
+.smart-phone-screen {
+    width: 280px;
+    height: 535px;
+    border-radius: 1.6rem;
+    background-color: var(--LightGrayishViolet);
+    border: 10px solid var(--White);
+    box-shadow: 1rem 1rem 3.5rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.screen-header {
+    border-radius: 1.2rem 1.2rem 5px 5px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(45deg, hsl(264deg 100% 61%) 0%, hsl(280deg 100% 61%) 50%, hsl(293deg 100% 63%) 100%);
+}
+
+.screen-notch {
+    width: 150px;
+    height: 22px;
+    background-color: var(--White);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    margin: -1px auto 0 auto;
+}
+
+.header-contents {
+    position: relative;
+    top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left-side {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.back-btn img {
+    width: 5px;
+    height: 18px;
+    object-fit: fill;
+}
+
+.chat-dp img {
+    width: 25px;
+    height: 25px;
+    object-fit: fill;
+    border-radius: 50%;
+    border: 2px solid var(--White);
+}
+
+.user-details {
+    color: var(--LightGrayishViolet);
+}
+
+.user-name {
+    font-size: 13px;
+    font-weight: 400;
+    padding-bottom: 3px;
+}
+
+.is-available {
+    font-size: 8px;
+    font-weight: 400;
+    opacity: .5;
+}
+
+.header-right-side {
+    padding: 4px 15px 0 0;
+}
+
+.chat-menu img {
+    width: 5px;
+    object-fit: fill;
+}
+
+.receive-msg {
+    background-color: var(--chatBgcolor);
+    width: fit-content;
+    padding: 7px 5px 7px 10px;
+    border-radius: 10px 10px 10px 2px;
+    margin: 10px 0 0 12px;
+}
+
+.receive-msg p {
+    font-size: 8px;
+    width: 22ch;
+    line-height: 11px;
+    color: var(--ModerateViolet);
+}
+
+.sent-photo-msg {
+    width: fit-content;
+    margin: 15px 12px 0 auto;
+}
+
+.sent-photo-msg img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: fill;
+    margin-inline-start: 5px;
+}
+
+.sent-msg {
+    background-color: var(--White);
+    width: fit-content;
+    padding: 6px 10px 6px 12px;
+    border-radius: 10px 10px 2px 10px;
+    box-shadow: 0 1rem 3.5rem rgba(0, 0, 0, 0.1);
+    margin: 10px 12px 0 auto;
+}
+
+.sent-msg p {
+    font-size: 8px;
+    color: var(--VeryDarkDesaturatedViolet);
+    max-width: 22ch;
+    line-height: 11px;
+}
+
+.receive-price-msg {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--chatBgcolor);
+    width: 160px;
+    padding: 12px 15px 10px 10px;
+    border-radius: 10px 10px 10px 2px;
+    margin: 10px 0 0 12px;
+    color: var(--White);
+    background-image: linear-gradient(45deg, hsl(293deg 100% 63%)0%, hsl(280deg 100% 61%) 50%, hsl(264deg 100% 61%) 100%);
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--LightGrayishViolet);
+    border-radius: 50%;
+    opacity: .4;
+}
+
+.times {
+    font-size: 8px;
+    opacity: .7;
+}
+
+.prices {
+    font-size: 10px;
+    margin-left: auto;
+}
+
+.message-input {
+    text-align: center;
+    margin: 18px 0 0 0;
+    left: auto;
+}
+
+.message-input input[type=text] {
+    width: 93%;
+    border: none;
+    padding: 12px 40px 12px 18px;
+    border-radius: 1.5rem;
+    font-size: 15px;
+    outline: none;
+    font-weight: 500;
+    color: var(--VeryDarkDesaturated);
+}
+.message-input input[type=text]::placeholder{
+    font-size: 12px;
+    color: var(--GrayishBlue);
+} 
+
+.send-icon{
+    position: relative;
+    left: 13.75rem;
+    top: -2.12rem;
+    width: 24px;
+    height: 24px;
+}
+/* end smart phone design */
+
+/* booking message title and paragraph design */
+.message-title {
+    color: var(--VeryDarkDesaturatedViolet);
+    font-weight: 500;
+}
+.message-content {
+    color: var(--DarkGrayishViolet);
+    font-weight: 300;
+}
+/* end booking message title and paragraph design */
+
+
+@media screen and (max-width:375px) {
+
+    .smart-phone-screen {
+        width: 260px;
+        height: 530px;
+    }
+
+    .send-icon {
+        position: relative;
+        left: 12.55rem;
+        top: -1.95rem;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (min-width:480px) {
+    .left-background {
+        width: 36rem !important;
+        height: 32rem;
+        top: 0;
+        left: -20rem;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .left-background {
+        width: 32rem;
+        height: 32rem;
+        top: 0;
+        left: -20rem;
+    }
+
+    .container {
+        height: inherit;
+    }
+
+    .card {
+        margin: 4rem 0;
+        flex-direction: column;
+    }
+
+    .message-title {
+        padding: 3rem 0 1rem 0;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .message-content {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 35px 20px 35px;
+        line-height: 1.75rem;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .left-background {
+        width: 39rem !important;
+        height: 34rem;
+        top: 0;
+        left: -20rem;
+    }
+
+    .container {
+        height: inherit;
+    }
+
+    .card {
+        margin: 4rem 0;
+    }
+
+    .message-title {
+        padding: 3rem 0 1rem 0;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .message-content {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 5rem 1.5rem 5rem;
+        line-height: 1.75rem;
+    }
+}
+@media screen and (min-width:768px) {
+    .left-background {
+        width: 45rem !important;
+        height: 36rem;
+    }
+    .card {
+        margin: 5rem 0;
+    }
+    .message-title {
+        padding: 4rem 0 1rem 0;
+    }
+    .message-content {
+        padding: 0 7rem 1.5rem 7rem;
+        line-height: 1.95rem;
+    }
+}
+@media screen and (min-width:992px){
+    .left-background {
+        width: 45rem !important;
+        height: 36rem;
+        left: -14rem;
+    }
+    .message-title {
+        padding: 4rem 0 1rem 0;
+        font-size: 2.8rem;
+    }
+    .message-content {
+        font-size: 18px;
+        padding: 0 10rem 1.5rem 10rem;
+        line-height: 2rem;
+    }
+}
+@media screen and (min-width:1200px){
+    .left-background {
+        width: 31rem !important;
+        height: 87.5vh;
+        left: -5.7rem;
+    }
+    .container {
+        max-width: 1440px;
+        max-height: 850px;
+        margin: auto;
+        overflow: hidden;
+    }
+    .card{
+        grid-template-columns: auto auto;
+        margin: 1.5rem 0 0 18.5rem;
+        gap:8rem;
+        height: 620px;
+    }
+    .message-title {
+        padding: 4rem 0 1rem 0;
+        font-size: 2.5rem;
+        text-align: start;
+    }
+    .message-content {
+        font-size: 16px;
+        padding: 0 19rem 1.5rem 0;
+        line-height: 2rem;
+        text-align: start;
+    }
+}
